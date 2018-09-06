@@ -1,9 +1,11 @@
 
 
-document.querySelectorAll('div').addEventListener('click', function(e) {
+document.querySelector('div').addEventListener('click', function(e) {
     e.preventDefault()
-    let div = document.querySelectorAll('div')
-    
-    alert('You clicked the div')
+    let div = document.querySelector('div')
+    let newNewh4 = document.createElement('h4')
+    newNewh4.innerText = "go"
+
+    div.appendChild(newNewh4)
 
 })
